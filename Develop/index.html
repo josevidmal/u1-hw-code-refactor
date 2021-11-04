@@ -12,7 +12,8 @@
     <!-- Changed <div> for semantic html <header> tags.
     Removed class="header". -->
     <header>
-        <h1>Hori<span class="seo">seo</span>n</h1>
+        <!-- Changed class for id attribute for specificity -->
+        <h1>Hori<span id="seo">seo</span>n</h1>
         <!-- Changed <div> for semantic html <nav> tags. -->
         <nav>
             <ul>
@@ -75,12 +76,14 @@
         </section>
     </main>
 
-    <!-- Changed <div> for semantic html <aside> tags. -->
-    <aside class="benefits">
-        <!-- Changed <div> for semantic html <figure> tags. 
+    <!-- Changed <div> for semantic html <aside> tags. 
+    Removed class="benefits" -->
+    <aside>
+        <!-- Changed <div> for semantic html <figure> tags.
+        Changed class="benefit-lead" to class="benefits". 
         Changed <p> for semantic html <figcaption> tags. 
         Added alt attribute for accessibility. -->
-        <figure class="benefit-lead">
+        <figure class="benefits">
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png"
                  alt="Lead Generation icon" />
@@ -89,9 +92,10 @@
             </figcaption>
         </figure>
         <!-- Changed <div> for semantic html <figure> tags. 
+        Changed class="benefit-brand" to class="benefits".
         Changed <p> for semantic html <figcaption> tags.
         Added alt attribute for accessibility. -->
-        <figure class="benefit-brand">
+        <figure class="benefits">
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png"
                  alt="Brand Awareness icon" />
@@ -100,9 +104,10 @@
             </figcaption>
         </figure>
         <!-- Changed <div> for semantic html <figure> tags.
+        Changed class="benefit-cost" to class="benefits".
         Changed <p> for semantic html <figcaption> tags. 
         Added alt attribute for accessibility. -->
-        <figure class="benefit-cost">
+        <figure class="benefits">
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png" 
                  alt="Cost Management icon"/>
