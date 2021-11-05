@@ -50,18 +50,20 @@ a {
     text-decoration: none;
 }
 
-/* Added the figcaption element selector to match the p element font-size */
-p, figcaption {
-    font-size: 16px;
-}
-
 /* Image removed from css file, placed in html with semantic elemtents and alt attr.
 Removed background-image, background-size and background-position properties.
 Added img element selector under the .hero class */
 .hero img {
-    height: 800px;
+    height: 900px;
     width: 100%;
     margin-bottom: 25px;
+}
+
+/* Changed .content class selectors for main element selector (semantic HTML) */
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .float-left {
@@ -74,15 +76,9 @@ Added img element selector under the .hero class */
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-
-
-.search-engine-optimization {
+/* Changed the class selectors for section element selector (semantic HTML).
+Consolidated properties for multiple elements with section element selector. */
+section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -91,49 +87,20 @@ Added img element selector under the .hero class */
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* Consolidated properties for img elements under the section element selector. */
+section img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* Consolidated properties for h2 elements under the section element selector. */
+section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+/* Added the figcaption element selector to match the p element font-size */
+p, figcaption {
+    font-size: 16px;
 }
 
 /* Moved all CSS rules for <aside> container under the CSS rules for <main> container.
@@ -151,7 +118,7 @@ aside {
     color: #ffffff;    
 }
 
-/* Consolidated properties for multiple elements under the .benefits class */
+/* Consolidated properties for multiple elements with .benefits class selector */
 .benefits {
     margin-bottom: 32px;
     color: #ffffff;
@@ -170,13 +137,16 @@ aside {
     max-width: 150px;
 }
 
-.footer {
+/* Changed .footer class selectors for footer element selectors (semantic HTML) */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/* Removed the following CSS rule:
+footer h2 {
     font-size: 20px;
 }
+Used h4 elements for footer heading in html */
