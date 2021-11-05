@@ -55,13 +55,13 @@ p, figcaption {
     font-size: 16px;
 }
 
-.hero {
+/* Image removed from css file, placed in html with semantic elemtents and alt attr.
+Removed background-image, background-size and background-position properties.
+Added img element selector under the .hero class */
+.hero img {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .float-left {
